@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { ArrowRight, Github, Linkedin, Mail, Twitter } from "lucide-react"
+import { ArrowRight, Github, Linkedin, Mail, PenTool } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
@@ -68,7 +68,7 @@ export default function Home() {
                     <span className="sr-only">GitHub</span>
                   </Link>
                   <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                    <Twitter className="h-5 w-5" />
+                    <PenTool className="h-5 w-5" />
                     <span className="sr-only">Twitter</span>
                   </Link>
                   <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
@@ -179,16 +179,20 @@ export default function Home() {
       <footer className="border-t py-6 md:py-0">
         <div className="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row">
           <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
-            &copy; {new Date().getFullYear()} 개발자 이름. All rights reserved.
+            &copy; {new Date().getFullYear()} 
+            <Link href="https://github.com/YooByWk" target="_blank" rel="noopener noreferrer" >
+            {" " + "뱅어포 직판장. "}
+            </Link>
+             All rights reserved.
           </p>
           <div className="flex gap-4">
-            <Link href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <Link href="https://github.com/onyueo" target="_blank" rel="noopener noreferrer">
               <Github className="h-5 w-5" />
               <span className="sr-only">GitHub</span>
             </Link>
             <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-              <Twitter className="h-5 w-5" />
-              <span className="sr-only">Twitter</span>
+              <PenTool className="h-5 w-5" />
+              <span className="sr-only">Blog</span>
             </Link>
             <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
               <Linkedin className="h-5 w-5" />
