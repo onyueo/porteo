@@ -9,8 +9,8 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "개발자 이름 - 프론트엔드 개발자 포트폴리오",
-  description: "프론트엔드 개발자 포트폴리오 및 블로그",
+  title: "옹씌의 쿠키공자",
+  description: "프론트엔드 개발자 김온유의 포트폴리오 및 블로그",
     generator: 'v0.dev'
 }
 
