@@ -63,11 +63,11 @@ export default function Home() {
                   </Button>
                 </div>
                 <div className="flex gap-4 mt-4">
-                  <Link href="https://github.com" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://github.com/onyueo" target="_blank" rel="noopener noreferrer">
                     <Github className="h-5 w-5" />
                     <span className="sr-only">GitHub</span>
                   </Link>
-                  <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://onyueo.tistory.com/" target="_blank" rel="noopener noreferrer">
                     <PenTool className="h-5 w-5" />
                     <span className="sr-only">Twitter</span>
                   </Link>
@@ -75,7 +75,7 @@ export default function Home() {
                     <Linkedin className="h-5 w-5" />
                     <span className="sr-only">LinkedIn</span>
                   </Link>
-                  <Link href="mailto:email@example.com">
+                  <Link href="mailto:gkc04075@gmail.com">
                     <Mail className="h-5 w-5" />
                     <span className="sr-only">Email</span>
                   </Link>
@@ -190,7 +190,7 @@ export default function Home() {
               <Github className="h-5 w-5" />
               <span className="sr-only">GitHub</span>
             </Link>
-            <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+            <Link href="https://onyueo.tistory.com/" target="_blank" rel="noopener noreferrer">
               <PenTool className="h-5 w-5" />
               <span className="sr-only">Blog</span>
             </Link>
@@ -208,28 +208,30 @@ export default function Home() {
 // 샘플 데이터
 const projects = [
   {
-    title: "이커머스 웹사이트",
-    slug: "ecommerce-website",
-    description: "React와 Next.js를 사용한 현대적인 이커머스 플랫폼",
+    title: "MU:N",
+    slug: "application",
+    description: "현관문 자동 개폐기 어플리케이션",
     image: "/placeholder.svg?height=225&width=400",
-    tags: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
+    tags: ["Kotlin", "AAC", "MVVM", "Data Binding"],
   },
   {
-    title: "대시보드 UI",
-    slug: "dashboard-ui",
-    description: "데이터 시각화와 관리를 위한 반응형 대시보드",
+    title: "소콘소콘",
+    slug: "application",
+    description: "소상공인을 위한 기프티콘 발행 서비스",
     image: "/placeholder.svg?height=225&width=400",
-    tags: ["React", "TypeScript", "Chart.js", "Tailwind CSS"],
+    tags: ["Flutter", "Dart"],
   },
   {
-    title: "소셜 미디어 앱",
-    slug: "social-media-app",
-    description: "실시간 기능을 갖춘 소셜 네트워킹 애플리케이션",
+    title: "Now Do Boss",
+    slug: "website",
+    description: "빅데이터 기반, 창업을 위한 상권 분석 서비스 플랫폼",
     image: "/placeholder.svg?height=225&width=400",
-    tags: ["React", "Firebase", "TypeScript", "Tailwind CSS"],
+    tags: ["React", "React-query", "TypeScript", "MUI"],
   },
 ]
 
+
+// t블로그 최신글 불러와서 연동하기
 const blogPosts = [
   {
     title: "React 18의 새로운 기능들",
